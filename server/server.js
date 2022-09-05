@@ -4,6 +4,7 @@ const bcrypt=require('bcrypt');
 app.use(express.json());
 const mongoose=require("mongoose");
 
+<<<<<<< HEAD
 const users=[]
 mongoose.connect
 
@@ -29,5 +30,8 @@ app.post('users', async (req,res)=> {
     res.status(500).send()  
 }
 })
+=======
+
+>>>>>>> f891f7f1813a76dd663d8b324b7b2a58055c165d
 
 app.listen(3000)
