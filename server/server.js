@@ -4,34 +4,5 @@ const bcrypt=require('bcrypt');
 app.use(express.json());
 const mongoose=require("mongoose");
 
-<<<<<<< HEAD
-const users=[]
-mongoose.connect
-
-app.get('users',(req,res)=> {
-    res.json(users)
-})
-
-app.post('users', async (req,res)=> {
-    try{
-        const salt=await bcrypt.genSalt();
-        const hashedPassword=await bcrypt.hash(req.body.password,salt)
-        console.log(salt)
-        console.log(hashedPassword)
-    
-   const user=new UserSchema(
-   {name: res.body.name,password: hashedPassword})
-   user.save();
-   users.push(user)
-  
-   res.status(201).send()
-   bcrypt.hash(salt + 'password')
- } catch{
-    res.status(500).send()  
-}
-})
-=======
-
->>>>>>> f891f7f1813a76dd663d8b324b7b2a58055c165d
 
 app.listen(3000)
